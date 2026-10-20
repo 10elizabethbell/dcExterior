@@ -53,7 +53,7 @@ body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper
 ::selection{background:var(--yellow);color:var(--ink)}
 img,svg{display:block}
 a{color:inherit;text-underline-offset:3px}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:var(--r-field)}
 .top :focus-visible,.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--yellow)}
 .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
 h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
@@ -152,7 +152,7 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--blue)}
 form .btn-primary{width:100%}
 form .btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 .after{font-size:16px;color:var(--soft)}
-.sent{display:grid;gap:14px;padding:18px;border-radius:16px;background:var(--paper)}
+.sent{display:grid;gap:14px;padding:18px;border-radius:var(--r-card);background:var(--paper)}
 .sent p{color:var(--ink);font-weight:600}
 .sent blockquote{margin:0;font-size:16px;line-height:1.55;color:var(--body);white-space:pre-wrap}
 .sent .btns{display:grid;gap:10px}
@@ -163,10 +163,10 @@ form .btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 .close .wrap{display:grid;gap:28px}
 .close-logo{width:100%;max-width:260px;height:auto}
 .close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
-.fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,21px)/1.2 var(--display);max-width:460px}
+.fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:var(--r-card);background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,21px)/1.2 var(--display);max-width:460px}
 .fb:hover,.fb:focus-visible{outline:none;background:var(--card);box-shadow:none}
 .fb .lbl{display:flex;align-items:center;gap:14px}
-.fb .lbl svg{width:28px;height:28px;flex:none;color:#1877f2}
+.fb .lbl svg{width:28px;height:28px;flex:none;color:var(--blue)}
 .fb:focus-visible .arrow{background:var(--yellow);outline:3px solid var(--blue);outline-offset:3px}
 /* the proof link sits right under the services: where a visitor wants to see the work */
 .fb-proof{margin-top:28px;background:var(--navy);color:var(--on-dark)}
@@ -213,7 +213,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .ask .head{position:sticky;top:40px}
   .close .wrap{grid-template-columns:1fr auto;gap:48px;align-items:end}
   .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
-  .steps b{font-size:22px}
+
 }
 /* hover styles only where there is a real pointer, so taps don't leave them stuck on */
 @media (hover:hover){
@@ -228,7 +228,7 @@ form .btn-primary:hover{outline:2px solid var(--blue);outline-offset:2px}
 footer a:hover{color:var(--yellow)}
 }
 /* phones held sideways: keep the buttons on the first screen */
-@media (orientation:landscape) and (max-height:500px){.hero h1{font-size:52px}.hero-copy{padding-top:96px;padding-bottom:40px}}
+@media (orientation:landscape) and (max-height:500px){.hero h1{font-size:48px}.hero-copy{padding-top:96px;padding-bottom:40px}}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .js .rise,.float,.btn{transition:none}
