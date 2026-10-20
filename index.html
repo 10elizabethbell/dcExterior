@@ -132,7 +132,7 @@ section{padding:64px 0}
 form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
 .field{display:grid;gap:8px;min-width:0}
 .field label,.field legend{font:400 18px/1.2 var(--display);color:var(--ink);padding:0}
-.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+.field small{font:400 14px/1.3 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
 input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--blue);transition:border-color .15s}
 textarea{min-height:120px;resize:vertical}
@@ -153,6 +153,7 @@ form .btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 .sent p{color:var(--ink);font-weight:600}
 .sent blockquote{margin:0;font-size:16px;line-height:1.55;color:var(--body);white-space:pre-wrap}
 .sent .btns{display:grid;gap:10px}
+.sent .btn-quiet{background:var(--card);border-color:var(--card)}
 @media (max-width:380px){.chips label{padding:0 14px}}
 
 /* ---------- Close ---------- */
@@ -162,7 +163,7 @@ form .btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 .fb:hover,.fb:focus-visible{outline:none;background:var(--card);box-shadow:none}
 .fb .lbl{display:flex;align-items:center;gap:14px}
 .fb .lbl svg{width:28px;height:28px;flex:none;color:#1877f2}
-.fb:focus-visible .arrow{background:var(--yellow);outline:3px solid var(--yellow);outline-offset:3px}
+.fb:focus-visible .arrow{background:var(--yellow);outline:3px solid var(--ink);outline-offset:3px}
 
 /* ---------- Footer ---------- */
 footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
@@ -216,6 +217,8 @@ input[type=text]:hover,textarea:hover{border-color:var(--blue)}
 form .btn-primary:hover{outline:2px solid var(--blue);outline-offset:2px}
 footer a:hover{color:var(--yellow)}
 }
+/* phones held sideways: keep the buttons on the first screen */
+@media (orientation:landscape) and (max-height:500px){.hero h1{font-size:52px}.hero-copy{padding-top:24px;padding-bottom:40px}}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .js .rise,.float,.btn{transition:none}
@@ -251,7 +254,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="hero-copy">
       <p class="eyebrow">Free quotes</p>
       <h1 id="h1">Keep the rain <span class="accent">out of your home.</span></h1>
-      <p class="promise"><b>DC Exterior.</b> Tell us what the weather's showing you, and we'll give you a free quote.</p>
+      <p class="promise"><b>DC Exterior.</b> Tell us what the weather's showing you.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#ask">Get a free quote</a>
         <a class="btn btn-ghost" href="#fix">What we fix</a>
@@ -270,19 +273,19 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <ul class="rows">
       <li class="rise"><a class="row" href="#ask" data-job="Roof">
         <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21L20 7l17 14"/><path d="M8 17v16h24V17"/><path d="M14 23h12M12 28h16"/></svg>
-        <span><b>Roof</b><span class="signs">Missing or damaged shingles · leaks and water intrusion · algae and moss · weakened underlayment</span></span>
+        <span><b>Roof</b><span class="signs">Missing shingles · leaks · moss</span></span>
         <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
       <li class="rise"><a class="row" href="#ask" data-job="Chimney">
         <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 35V8h12v27"/><path d="M12 4h16v4H12z"/><path d="M14 15h12M14 22h12M14 29h12M20 8v7M20 22v7"/></svg>
-        <span><b>Chimney</b><span class="signs">Leaking mortar · cracked bricks · water getting in · damaged flashing</span></span>
+        <span><b>Chimney</b><span class="signs">Cracked bricks · leaking mortar · flashing</span></span>
         <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
       <li class="rise"><a class="row" href="#ask" data-job="Gutters">
         <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h32v4a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M29 18v10a5 5 0 0 0 5 5h2"/><path d="M13 23v3M19 26v3M13 31v2"/></svg>
-        <span><b>Gutters</b><span class="signs">Clogs and debris · leaks and cracks · sagging or loose sections · overflowing water</span></span>
+        <span><b>Gutters</b><span class="signs">Clogs · sagging · overflowing</span></span>
         <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-      <li class="rise"><a class="row" href="#ask" data-job="Pointing / brickwork">
+      <li class="rise"><a class="row" href="#ask" data-job="Pointing and brickwork">
         <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h32v24H4z"/><path d="M4 16h32M4 24h32M14 8v8M26 8v8M20 16v8M10 24v8M30 24v8"/></svg>
-        <span><b>Pointing and brickwork</b><span class="signs">Cracked or missing mortar · water getting in · weak structural support · crumbling brick</span></span>
+        <span><b>Pointing and brickwork</b><span class="signs">Cracked mortar · crumbling brick</span></span>
         <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
       <li class="rise"><a class="row" href="#ask" data-job="Painting">
         <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 6h24v9H5z"/><path d="M29 10h5v10H19v5"/><path d="M17 25h4v11h-4z"/></svg>
@@ -306,18 +309,18 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
     <div class="head rise">
-      <p class="eyebrow">No phone call needed</p>
+      <p class="eyebrow">Takes a minute</p>
       <h2 id="h-ask">Get a free quote</h2>
       <p class="lede">This goes to us on Facebook Messenger. You can add photos there.</p>
     </div>
-    <form id="quoteForm" class="rise" novalidate>
+    <form id="quoteForm" class="rise" action="https://m.me/61558693145112" method="get" novalidate>
       <fieldset class="field">
         <legend>What needs looking at? <small>(optional)</small></legend>
         <div class="chips">
           <input type="radio" name="job" id="j1" value="Roof"><label for="j1">Roof</label>
           <input type="radio" name="job" id="j2" value="Chimney"><label for="j2">Chimney</label>
           <input type="radio" name="job" id="j3" value="Gutters"><label for="j3">Gutters</label>
-          <input type="radio" name="job" id="j4" value="Pointing / brickwork"><label for="j4">Pointing / brickwork</label>
+          <input type="radio" name="job" id="j4" value="Pointing and brickwork"><label for="j4">Pointing and brickwork</label>
           <input type="radio" name="job" id="j5" value="Painting"><label for="j5">Painting</label>
           <input type="radio" name="job" id="j6" value="Not sure"><label for="j6">Not sure</label>
         </div>
@@ -345,7 +348,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <a class="btn btn-quiet" data-msg href="https://m.me/61558693145112">Open Messenger</a>
         </div>
       </div>
-      <p class="after">Opens Messenger with your message written out.</p>
+      <p class="after">Opens Messenger with your message. We copy it too, so you can paste it in.</p>
     </form>
   </div>
 </section>
@@ -353,11 +356,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-navy close" id="close" aria-labelledby="h-close">
   <div class="wrap">
     <div class="rise">
-      <h2 id="h-close">DC Exterior</h2>
-      <p class="who">Protecting your property in every season.</p>
+      <h2 id="h-close">Protecting your property <span class="accent">in every season.</span></h2>
+      <p class="who">DC Exterior</p>
     </div>
     <a class="fb rise" href="https://www.facebook.com/profile.php?id=61558693145112" rel="noopener">
-      <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>See our work on Facebook</span>
+      <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>See more on our Facebook</span>
       <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
     </a>
   </div>
@@ -408,9 +411,16 @@ function messengerLink(text){return CONFIG.MESSENGER+(text?'?text='+encodeURICom
       }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
     });
   }
-  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
-  // once the last letter lands, put the plain heading back so kerning and text selection return
-  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+  h.style.opacity='0';  // hidden only while waiting (600ms at most), so the plain heading doesn't flash before the letters
+  function run(){
+    h.style.opacity='';
+    var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+    // once the last letter lands, put the plain heading back so kerning and text selection return
+    if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+  }
+  // start once Cal Sans is in (or after 600ms) so letters don't re-flow mid-flight
+  var started=false;function go(){if(!started){started=true;run()}}
+  if(document.fonts&&document.fonts.load){document.fonts.load('1em "Cal Sans"').then(go,go);setTimeout(go,600)}else go();
 })();
 
 /* ===== Service rows pre-select the matching job chip ===== */
@@ -440,7 +450,8 @@ function messengerLink(text){return CONFIG.MESSENGER+(text?'?text='+encodeURICom
     if(!name){document.getElementById('name').focus();return}
     if(!town){document.getElementById('town').focus();return}
     msg='Hi DC Exterior, this is '+name+' in '+town+'. I found your website and would like a free quote';
-    msg+=job&&job.value!=='Not sure'?' for my '+job.value.toLowerCase()+'.':'.';
+    var JOB={'Roof':'my roof','Chimney':'my chimney','Gutters':'my gutters','Pointing and brickwork':'pointing and brickwork','Painting':'exterior painting'};
+    msg+=job&&JOB[job.value]?' for '+JOB[job.value]+'.':'.';
     if(what)msg+=' What I\'m seeing: '+what;
     msgEl.textContent=msg;
     sent.querySelector('[data-msg]').href=messengerLink(msg);
