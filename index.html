@@ -70,6 +70,7 @@ section{padding:64px 0}
 .on-navy .accent,.on-deep .accent,.hero .accent{color:var(--yellow)}
 .head{display:grid;gap:16px;justify-items:start;max-width:640px}
 .lede{font-size:clamp(18px,4.6vw,20px);color:var(--soft);max-width:38ch}
+.promise,.lede,.row span.signs,.close .who{text-wrap:pretty}
 .on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
 
 /* Eyebrow: a few key headings only. A label, not a button. */
@@ -87,7 +88,8 @@ section{padding:64px 0}
 .btn-quiet{background:var(--field);color:var(--ink);border-color:var(--field)}
 
 /* ---------- Header (navy, so the real logo sits on its own ground) ---------- */
-.top{background:var(--navy);color:var(--on-dark)}
+/* header sits on the hero, so the navy and its lines run unbroken to the top */
+.top{position:absolute;top:0;left:0;right:0;z-index:2;background:transparent;color:var(--on-dark)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding-top:max(10px,env(safe-area-inset-top));padding-bottom:6px}
 .brand{display:flex;align-items:center;min-height:48px;text-decoration:none}
 .brand img{height:46px;width:auto}
@@ -97,7 +99,7 @@ section{padding:64px 0}
 /* ---------- Hero ---------- */
 .hero{padding:0;position:relative;background-color:var(--navy);background-image:var(--texture);color:var(--on-dark);overflow:hidden}
 .hero .wrap{display:grid;align-items:center}
-.hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:44px;padding-bottom:64px}
+.hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:calc(36px + max(76px, env(safe-area-inset-top) + 66px));padding-bottom:64px}
 .hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:11ch}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
 .hero h1 .w{display:inline-block;white-space:nowrap}
@@ -134,6 +136,7 @@ form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,3
 .field label,.field legend{font:400 18px/1.2 var(--display);color:var(--ink);padding:0}
 .field small{font:400 14px/1.3 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
+fieldset.field legend{margin-bottom:12px}
 input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--blue);transition:border-color .15s}
 textarea{min-height:120px;resize:vertical}
 input::placeholder,textarea::placeholder{color:var(--soft)}
@@ -158,12 +161,18 @@ form .btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 
 /* ---------- Close ---------- */
 .close .wrap{display:grid;gap:28px}
+.close-logo{width:100%;max-width:260px;height:auto}
 .close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
 .fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,21px)/1.2 var(--display);max-width:460px}
 .fb:hover,.fb:focus-visible{outline:none;background:var(--card);box-shadow:none}
 .fb .lbl{display:flex;align-items:center;gap:14px}
 .fb .lbl svg{width:28px;height:28px;flex:none;color:#1877f2}
-.fb:focus-visible .arrow{background:var(--yellow);outline:3px solid var(--ink);outline-offset:3px}
+.fb:focus-visible .arrow{background:var(--yellow);outline:3px solid var(--blue);outline-offset:3px}
+/* the proof link sits right under the services: where a visitor wants to see the work */
+.fb-proof{margin-top:28px;background:var(--navy);color:var(--on-dark)}
+.fb-proof:hover,.fb-proof:focus-visible{background:var(--navy)}
+.fb-proof .lbl svg{color:#fff}
+.fb-proof .arrow{background:rgba(255,255,255,.14);color:#fff}
 
 /* ---------- Footer ---------- */
 footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
@@ -188,7 +197,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .brand img{height:50px}
   .msg{font-size:20px}
   section{padding:96px 0}
-  .hero-copy{padding-top:88px;padding-bottom:112px}
+  .hero-copy{padding-top:calc(80px + max(88px, env(safe-area-inset-top) + 78px));padding-bottom:112px}
   .promise{max-width:none}
   .actions{grid-auto-flow:column;justify-content:start;width:auto}
   .actions .btn{min-width:220px}
@@ -199,6 +208,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .services .wrap{display:grid;grid-template-columns:1fr 1.3fr;column-gap:64px;align-items:start}
   .services .head{position:sticky;top:40px}
   .services .rows{margin-top:0}
+  .services .fb-proof{grid-column:2}
   .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
   .ask .head{position:sticky;top:40px}
   .close .wrap{grid-template-columns:1fr auto;gap:48px;align-items:end}
@@ -218,7 +228,7 @@ form .btn-primary:hover{outline:2px solid var(--blue);outline-offset:2px}
 footer a:hover{color:var(--yellow)}
 }
 /* phones held sideways: keep the buttons on the first screen */
-@media (orientation:landscape) and (max-height:500px){.hero h1{font-size:52px}.hero-copy{padding-top:24px;padding-bottom:40px}}
+@media (orientation:landscape) and (max-height:500px){.hero h1{font-size:52px}.hero-copy{padding-top:96px;padding-bottom:40px}}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .js .rise,.float,.btn{transition:none}
@@ -292,6 +302,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <span><b>Exterior painting</b></span>
         <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
     </ul>
+    <a class="fb fb-proof rise" href="https://www.facebook.com/profile.php?id=61558693145112" rel="noopener"><span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>See our work on Facebook</span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
   </div>
 </section>
 
@@ -359,10 +370,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <h2 id="h-close">Protecting your property <span class="accent">in every season.</span></h2>
       <p class="who">DC Exterior</p>
     </div>
-    <a class="fb rise" href="https://www.facebook.com/profile.php?id=61558693145112" rel="noopener">
-      <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>See more on our Facebook</span>
-      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-    </a>
+    <img class="close-logo rise" src="logo.webp" width="560" height="331" alt="" loading="lazy">
   </div>
 </section>
 </main>
