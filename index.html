@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DC Exterior · Roofs, chimneys, gutters and pointing · Free quotes</title>
+<meta name="description" content="DC Exterior fixes the roof, chimney, gutter and brickwork problems wet weather shows up. Free quotes. Message us on Facebook.">
+<meta name="theme-color" content="#0d2c4d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DC Exterior · Keep the rain out of your home">
+<meta property="og:description" content="Roofs, chimneys, gutters, pointing and painting. Free quotes. Protecting your property in every season.">
+<meta property="og:url" content="https://10elizabethbell.github.io/dcExterior/">
+<meta property="og:image" content="https://10elizabethbell.github.io/dcExterior/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  /* off-white paper, two DC navies (from the ad's band), the ad's yellow, the logo's blue */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --field:#e6ecf5;       /* inputs and chips on the white form card */
+  --ink:#0b2340;         /* headings, text on yellow */
+  --body:#2a3a4c;        /* running text on light */
+  --soft:#4a5868;        /* secondary text on light */
+  --navy:#0d2c4d;        /* header, hero, close */
+  --deep:#061b31;        /* how it works, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c9d7ea;
+  --yellow:#f8d404;      /* the ad's headline yellow: fills only; text on it is --ink */
+  --yellow-2:#ffe13d;
+  --yellow-ink:#705f00;  /* yellow as text on light (5.8:1), if ever needed */
+  --blue:#038df8;        /* the logo's blue: icons, form hover/focus outline (3.4:1 on white) */
+  --blue-soft:#5fb4ff;   /* the logo's blue lifted for use on navy */
+  --line:rgba(11,35,64,.12);
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
+  --gutter:20px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper);scrollbar-color:var(--navy) var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--yellow);color:var(--ink)}
+img,svg{display:block}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.top :focus-visible,.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--yellow)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--yellow)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(18px,4.6vw,20px);color:var(--soft);max-width:38ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(11,35,64,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--yellow)}
+.on-paper .eyebrow::before{background:var(--blue)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+.btn-quiet{background:var(--field);color:var(--ink);border-color:var(--field)}
+
+/* ---------- Header (navy, so the real logo sits on its own ground) ---------- */
+.top{background:var(--navy);color:var(--on-dark)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding-top:max(10px,env(safe-area-inset-top));padding-bottom:6px}
+.brand{display:flex;align-items:center;min-height:48px;text-decoration:none}
+.brand img{height:46px;width:auto}
+.msg{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 18px/1 var(--display);text-decoration:none;white-space:nowrap;color:var(--on-dark)}
+.msg svg{width:20px;height:20px;flex:none;color:var(--yellow)}
+
+/* ---------- Hero ---------- */
+.hero{padding:0;position:relative;background-color:var(--navy);background-image:var(--texture);color:var(--on-dark);overflow:hidden}
+.hero .wrap{display:grid;align-items:center}
+.hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:44px;padding-bottom:64px}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:11ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(18px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:30ch}
+.promise b{color:var(--on-dark);font-weight:600}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
+.hero-logo{display:none}
+
+/* ---------- Services: rows, only the arrow reacts ---------- */
+.rows{list-style:none;margin:32px 0 0;padding:0;display:grid}
+.rows li+li{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:40px 1fr 44px;gap:16px;align-items:center;padding:20px 0;text-decoration:none;color:var(--ink)}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.row .ico{width:40px;height:40px;color:var(--blue);align-self:start;margin-top:2px}
+.row b{display:block;font:400 clamp(21px,5.6vw,25px)/1.15 var(--display)}
+.row span.signs{display:block;margin-top:6px;font-size:16px;line-height:1.5;color:var(--soft)}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(11,35,64,.07);color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.row:focus-visible .arrow{background:var(--yellow);outline:3px solid var(--blue);outline-offset:3px}
+
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
+
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 18px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--blue);transition:border-color .15s}
+textarea{min-height:120px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--blue);outline-offset:2px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:16px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.after{font-size:16px;color:var(--soft)}
+.sent{display:grid;gap:14px;padding:18px;border-radius:16px;background:var(--paper)}
+.sent p{color:var(--ink);font-weight:600}
+.sent blockquote{margin:0;font-size:16px;line-height:1.55;color:var(--body);white-space:pre-wrap}
+.sent .btns{display:grid;gap:10px}
+@media (max-width:380px){.chips label{padding:0 14px}}
+
+/* ---------- Close ---------- */
+.close .wrap{display:grid;gap:28px}
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
+.fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,21px)/1.2 var(--display);max-width:460px}
+.fb:hover,.fb:focus-visible{outline:none;background:var(--card);box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:28px;height:28px;flex:none;color:#1877f2}
+.fb:focus-visible .arrow{background:var(--yellow);outline:3px solid var(--yellow);outline-offset:3px}
+
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating message circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);box-shadow:0 10px 28px rgba(6,27,49,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:28px;height:28px}
+.float:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:80px}
+  .brand img{height:50px}
+  .msg{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:88px;padding-bottom:112px}
+  .promise{max-width:none}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:220px}
+}
+@media (min-width:1024px){
+  .hero .wrap{grid-template-columns:1.25fr 1fr;gap:48px}
+  .hero-logo{display:block;width:100%;max-width:440px;height:auto;justify-self:end}
+  .services .wrap{display:grid;grid-template-columns:1fr 1.3fr;column-gap:64px;align-items:start}
+  .services .head{position:sticky;top:40px}
+  .services .rows{margin-top:0}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
+}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.msg:hover{color:var(--yellow)}
+.btn-primary:hover{background:var(--yellow-2);border-color:var(--yellow-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.btn-quiet:hover{border-color:var(--blue)}
+.row:hover .arrow,.fb:hover .arrow{background:var(--yellow);color:var(--ink)}
+input[type=text]:hover,textarea:hover{border-color:var(--blue)}
+.chips label:hover{border-color:var(--blue)}
+form .btn-primary:hover{outline:2px solid var(--blue);outline-offset:2px}
+footer a:hover{color:var(--yellow)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: An exterior contractor's site that meets the homeowner at the moment the rain shows them a problem: name the problem in their ad's own words (roof, chimney, gutters, pointing), then make the free quote one Messenger message away.
+OWN-WORLD: The calm band style in DC's own colours: off-white paper, the ad's navy band (#0d2c4d, deep #061b31 with faint diagonal lines), the ad's headline yellow (#f8d404) as the one warm fill, and the logo's bright blue (#038df8) for icons and form focus. Their real logo, keyed off its black square onto navy. Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees DC Exterior and "Keep the rain out of your home", recognises their own problem in the four areas and their signs, sees that a quote is free and only takes a message, and sends one on Messenger.
+FIRST VIEWPORT: Navy header with the DC house mark left and "Message us" top right. Navy hero with the line texture: eyebrow "Free quotes", the H1, one promise line naming DC Exterior, one yellow "Get a free quote" button and an outlined "What we fix". Desktop adds the full logo on the right.
+FORM: Plain textured navy hero (no real job photos exist; the ad's house is an illustration, not their work). Contact is Messenger only: no phone or email published.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M12 2.8c-5.2 0-9.2 3.8-9.2 8.7 0 2.7 1.2 5 3.2 6.6v3.3l3.1-1.7c.9.3 1.9.4 2.9.4 5.2 0 9.2-3.8 9.2-8.6S17.2 2.8 12 2.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M7 13.6l3.3-3.5 2.5 2.4 4.2-3.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="DC Exterior, back to top"><img src="mark.webp" width="264" height="111" alt="DC Exterior"></a>
+    <a class="msg" data-msg href="https://m.me/61558693145112"><svg aria-hidden="true"><use href="#i-msg"/></svg>Message us</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Free quotes</p>
+      <h1 id="h1">Keep the rain <span class="accent">out of your home.</span></h1>
+      <p class="promise"><b>DC Exterior.</b> Tell us what the weather's showing you, and we'll give you a free quote.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#ask">Get a free quote</a>
+        <a class="btn btn-ghost" href="#fix">What we fix</a>
+      </div>
+    </div>
+    <img class="hero-logo" src="logo.webp" width="560" height="331" alt="" loading="lazy">
+  </div>
+</section>
+
+<section class="on-paper services" id="fix" aria-labelledby="h-fix">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Roof to brickwork</p>
+      <h2 id="h-fix">Wet weather shows up all kinds of issues.</h2>
+    </div>
+    <ul class="rows">
+      <li class="rise"><a class="row" href="#ask" data-job="Roof">
+        <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21L20 7l17 14"/><path d="M8 17v16h24V17"/><path d="M14 23h12M12 28h16"/></svg>
+        <span><b>Roof</b><span class="signs">Missing or damaged shingles · leaks and water intrusion · algae and moss · weakened underlayment</span></span>
+        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-job="Chimney">
+        <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 35V8h12v27"/><path d="M12 4h16v4H12z"/><path d="M14 15h12M14 22h12M14 29h12M20 8v7M20 22v7"/></svg>
+        <span><b>Chimney</b><span class="signs">Leaking mortar · cracked bricks · water getting in · damaged flashing</span></span>
+        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-job="Gutters">
+        <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h32v4a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M29 18v10a5 5 0 0 0 5 5h2"/><path d="M13 23v3M19 26v3M13 31v2"/></svg>
+        <span><b>Gutters</b><span class="signs">Clogs and debris · leaks and cracks · sagging or loose sections · overflowing water</span></span>
+        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-job="Pointing / brickwork">
+        <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h32v24H4z"/><path d="M4 16h32M4 24h32M14 8v8M26 8v8M20 16v8M10 24v8M30 24v8"/></svg>
+        <span><b>Pointing and brickwork</b><span class="signs">Cracked or missing mortar · water getting in · weak structural support · crumbling brick</span></span>
+        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a class="row" href="#ask" data-job="Painting">
+        <svg class="ico" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 6h24v9H5z"/><path d="M29 10h5v10H19v5"/><path d="M17 25h4v11h-4z"/></svg>
+        <span><b>Exterior painting</b></span>
+        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How a free quote <span class="accent">works.</span></h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Message us.</b><span>Tell us what you're seeing. A photo helps.</span></div></li>
+      <li class="rise"><div><b>We take a look.</b><span>Then you get your quote, free.</span></div></li>
+      <li class="rise"><div><b>We fix it.</b><span>Once you're happy with the quote.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">No phone call needed</p>
+      <h2 id="h-ask">Get a free quote</h2>
+      <p class="lede">This goes to us on Facebook Messenger. You can add photos there.</p>
+    </div>
+    <form id="quoteForm" class="rise" novalidate>
+      <fieldset class="field">
+        <legend>What needs looking at? <small>(optional)</small></legend>
+        <div class="chips">
+          <input type="radio" name="job" id="j1" value="Roof"><label for="j1">Roof</label>
+          <input type="radio" name="job" id="j2" value="Chimney"><label for="j2">Chimney</label>
+          <input type="radio" name="job" id="j3" value="Gutters"><label for="j3">Gutters</label>
+          <input type="radio" name="job" id="j4" value="Pointing / brickwork"><label for="j4">Pointing / brickwork</label>
+          <input type="radio" name="job" id="j5" value="Painting"><label for="j5">Painting</label>
+          <input type="radio" name="job" id="j6" value="Not sure"><label for="j6">Not sure</label>
+        </div>
+      </fieldset>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so we know who's asking.</p>
+      </div>
+      <div class="field" id="f-town">
+        <label for="town">Your town</label>
+        <input type="text" id="town" name="town" autocomplete="address-level2" maxlength="60" aria-describedby="e-town">
+        <p class="err" id="e-town">Add your town so we know where the job is.</p>
+      </div>
+      <div class="field">
+        <label for="what">What are you seeing? <small>(optional)</small></label>
+        <textarea id="what" name="what" maxlength="600" placeholder="Water coming in by the chimney, gutter pulling away…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-msg"/></svg>Send on Messenger</button>
+      <div class="sent" id="sent" role="status" hidden>
+        <p id="sentNote">Messenger didn't open with your message? Copy it and send it to us there.</p>
+        <blockquote id="sentMsg"></blockquote>
+        <div class="btns">
+          <button class="btn btn-quiet" type="button" id="copyMsg">Copy message</button>
+          <a class="btn btn-quiet" data-msg href="https://m.me/61558693145112">Open Messenger</a>
+        </div>
+      </div>
+      <p class="after">Opens Messenger with your message written out.</p>
+    </form>
+  </div>
+</section>
+
+<section class="on-navy close" id="close" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="rise">
+      <h2 id="h-close">DC Exterior</h2>
+      <p class="who">Protecting your property in every season.</p>
+    </div>
+    <a class="fb rise" href="https://www.facebook.com/profile.php?id=61558693145112" rel="noopener">
+      <span class="lbl"><svg aria-hidden="true"><use href="#i-fb"/></svg>See our work on Facebook</span>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>DC Exterior · Roofs, chimneys, gutters, pointing and painting</span>
+    <nav aria-label="Contact">
+      <a href="https://www.facebook.com/profile.php?id=61558693145112" rel="noopener">Facebook</a>
+      <a data-msg href="https://m.me/61558693145112">Messenger</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="float" id="float" data-msg data-text="Hi DC Exterior, I found your website. I'd like a free quote for: " href="https://m.me/61558693145112" aria-label="Message DC Exterior on Messenger"><svg aria-hidden="true"><use href="#i-msg"/></svg></a>
+
+<script>
+/* ===== Config ===== */
+var CONFIG = {
+  FLOAT: true,                                 // the floating message circle; false removes it
+  MESSENGER: 'https://m.me/61558693145112',    // DC Exterior's Facebook page (the only published contact)
+  GREETING: "Hi DC Exterior, I found your website. I'd like a free quote."
+};
+document.documentElement.classList.add('js');
+
+/* ===== Messenger links: pre-fill a message where one is given (m.me ?text=) ===== */
+function messengerLink(text){return CONFIG.MESSENGER+(text?'?text='+encodeURIComponent(text):'')}
+[].forEach.call(document.querySelectorAll('[data-msg]'),function(a){a.href=messengerLink(a.getAttribute('data-text')||CONFIG.GREETING)});
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
+(function(){
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Service rows pre-select the matching job chip ===== */
+(function(){
+  [].forEach.call(document.querySelectorAll('.row[data-job]'),function(r){
+    r.addEventListener('click',function(){
+      var c=document.querySelector('input[name=job][value="'+r.getAttribute('data-job')+'"]');if(c)c.checked=true;
+    });
+  });
+})();
+
+/* ===== Quote form: composes a Messenger message (copied too, in case the prefill is dropped) ===== */
+(function(){
+  var form=document.getElementById('quoteForm');if(!form)return;
+  var sent=document.getElementById('sent'),msgEl=document.getElementById('sentMsg'),note=document.getElementById('sentNote'),msg='';
+  function val(id){return document.getElementById(id).value.trim()}
+  function mark(id,bad){var f=document.getElementById(id);f.classList.toggle('bad',bad);f.querySelector('input,textarea').setAttribute('aria-invalid',bad?'true':'false')}
+  function copy(text,done){
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){done(true)},function(){done(false)});return}
+    done(false);
+  }
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=val('name'),town=val('town'),what=val('what'),job=form.querySelector('input[name=job]:checked');
+    mark('f-name',!name);mark('f-town',!town);
+    if(!name){document.getElementById('name').focus();return}
+    if(!town){document.getElementById('town').focus();return}
+    msg='Hi DC Exterior, this is '+name+' in '+town+'. I found your website and would like a free quote';
+    msg+=job&&job.value!=='Not sure'?' for my '+job.value.toLowerCase()+'.':'.';
+    if(what)msg+=' What I\'m seeing: '+what;
+    msgEl.textContent=msg;
+    sent.querySelector('[data-msg]').href=messengerLink(msg);
+    sent.hidden=false;
+    copy(msg,function(ok){
+      if(ok)note.textContent='Your message is copied too. If Messenger opens empty, paste it in.';
+      location.href=messengerLink(msg);
+    });
+  });
+  document.getElementById('copyMsg').addEventListener('click',function(){
+    var b=this;copy(msg,function(ok){b.textContent=ok?'Copied':'Select the message above to copy it'});
+  });
+})();
+
+/* ===== Floating message circle: shows after the hero, hides while the form is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
+})();
+</script>
+</body>
+</html>
