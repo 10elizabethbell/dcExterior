@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T11:50:09.439101+00:00",
+  "title": "Design System: DC Exterior",
+  "extensions": {
+    "colorMeta": {
+      "yellow": {
+        "role": "primary",
+        "displayName": "Ad Headline Yellow",
+        "canonical": "#f8d404",
+        "tonalRamp": [
+          "#4b4001",
+          "#7d6b02",
+          "#b09603",
+          "#e2c104",
+          "#fbdb1d",
+          "#fce55e",
+          "#fef0a5",
+          "#fffbe6"
+        ]
+      },
+      "yellow-2": {
+        "role": "primary",
+        "displayName": "Lifted Yellow",
+        "canonical": "#ffe13d"
+      },
+      "yellow-ink": {
+        "role": "primary",
+        "displayName": "Yellow on Paper",
+        "canonical": "#705f00"
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Logo Blue",
+        "canonical": "#038df8",
+        "tonalRamp": [
+          "#012b4c",
+          "#02487e",
+          "#0264b0",
+          "#0381e3",
+          "#1c9afc",
+          "#5eb7fd",
+          "#a4d7fe",
+          "#e6f4ff"
+        ]
+      },
+      "blue-soft": {
+        "role": "secondary",
+        "displayName": "Logo Blue, Lifted",
+        "canonical": "#5fb4ff"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f4f6fb",
+        "tonalRamp": [
+          "#141f38",
+          "#22335d",
+          "#304783",
+          "#3d5ca8",
+          "#5775c2",
+          "#879dd3",
+          "#bcc8e7",
+          "#ecf0f8"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "#ffffff"
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Mist",
+        "canonical": "#e6ecf5",
+        "tonalRamp": [
+          "#162337",
+          "#243a5b",
+          "#335280",
+          "#4269a4",
+          "#5b82bd",
+          "#8aa6d0",
+          "#bdcde5",
+          "#edf1f8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Navy Ink",
+        "canonical": "#0b2340",
+        "tonalRamp": [
+          "#0b2441",
+          "#133b6d",
+          "#1a5398",
+          "#226bc4",
+          "#3b85dd",
+          "#74a8e7",
+          "#b1cef2",
+          "#e9f1fb"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Slate Body",
+        "canonical": "#2a3a4c",
+        "tonalRamp": [
+          "#1b2631",
+          "#2d3f52",
+          "#405873",
+          "#527194",
+          "#6b8aad",
+          "#96acc5",
+          "#c4d0de",
+          "#eff2f6"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "canonical": "#4a5868",
+        "tonalRamp": [
+          "#20262d",
+          "#353f4a",
+          "#4a5868",
+          "#5f7186",
+          "#798ba0",
+          "#a0acbb",
+          "#c9d1d9",
+          "#f0f2f4"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Ad Navy",
+        "canonical": "#0d2c4d",
+        "tonalRamp": [
+          "#0b2541",
+          "#123e6d",
+          "#1a5799",
+          "#2170c4",
+          "#3b8ade",
+          "#73ace7",
+          "#b0d0f2",
+          "#e9f2fb"
+        ]
+      },
+      "deep": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "#061b31",
+        "tonalRamp": [
+          "#082644",
+          "#0e3f72",
+          "#13589f",
+          "#1971cc",
+          "#338ae6",
+          "#6eaced",
+          "#add0f5",
+          "#e8f2fc"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On-Dark",
+        "canonical": "#f4f7fb"
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "On-Dark Soft",
+        "canonical": "#c9d7ea"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(11,35,64,.12)"
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Error Red",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "#420e0b",
+          "#6d1712",
+          "#99201a",
+          "#c52a21",
+          "#de433a",
+          "#e87973",
+          "#f2b4b0",
+          "#fbeae9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only, white on navy, closing clause in yellow; letter bounce-in."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Band headings (H2)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service names and step titles."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, field labels, header Messenger link, link cards. Always Cal Sans."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero promise and section ledes, 30-38ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, inputs, chips, footer. Never below 16px."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "The (optional) note beside a field label only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(6,27,49,.3)",
+        "purpose": "Floating Messenger circle only."
+      }
+    ],
+    "textures": [
+      {
+        "name": "navy-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Hero and deep-navy bands (how it works, footer)."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-light",
+        "value": "outline:3px solid #038df8;outline-offset:3px",
+        "purpose": "Paper and white grounds."
+      },
+      {
+        "name": "focus-dark",
+        "value": "outline:3px solid #f8d404;outline-offset:3px",
+        "purpose": "Navy and deep-navy grounds."
+      }
+    ],
+    "motion": [
+      {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), 20ms stagger, translateX(50px) to 0",
+        "purpose": "Hero H1 letter bounce-in, gated on Cal Sans load (600ms cap); restores plain heading after."
+      },
+      {
+        "name": "fade-up",
+        "value": "opacity + translateY(12px), .4s ease-out",
+        "purpose": "Only content starting below the first screen."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating message circle entrance."
+      },
+      {
+        "name": "state",
+        "value": ".2s colour transitions; .15s field borders; press scale(.98) over .12s",
+        "purpose": "Hover, focus and press states."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all of the above disabled",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      },
+      {
+        "name": "landscape-phone",
+        "value": "orientation:landscape and max-height:500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one yellow action per view.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Get a free quote</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-family:var(--display);font-weight:400;font-size:18px;line-height:1;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.ds-btn-primary{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}.ds-btn-primary:hover{background:var(--yellow-2);border-color:var(--yellow-2)}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outlined secondary action on navy, beside the primary.",
+      "html": "<div style=\"background:#0d2c4d;padding:24px\"><a class=\"ds-btn-ghost\" href=\"#\">What we fix</a></div>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:56px;padding:0 26px;border-radius:999px;font-family:var(--display);font-weight:400;font-size:18px;line-height:1;text-decoration:none;background:transparent;color:var(--on-dark);border:2px solid rgba(244,247,251,.7);transition:background-color .2s,border-color .2s}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary form actions inside the white card.",
+      "html": "<button class=\"ds-btn-quiet\" type=\"button\">Copy message</button>",
+      "css": ".ds-btn-quiet{display:inline-flex;align-items:center;min-height:56px;padding:0 26px;border-radius:999px;font-family:var(--display);font-weight:400;font-size:18px;line-height:1;background:var(--field);color:var(--ink);border:2px solid var(--field);cursor:pointer;transition:border-color .2s}.ds-btn-quiet:hover{border-color:var(--blue)}.ds-btn-quiet:focus-visible{outline:3px solid var(--blue);outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Field Mist input with Cal Sans label; border turns blue on focus.",
+      "html": "<label class=\"ds-field\"><span>Your name</span><input class=\"ds-input\" type=\"text\" placeholder=\"First name is fine\"></label>",
+      "css": ".ds-field{display:grid;gap:8px}.ds-field span{font-family:var(--display);font-weight:400;font-size:18px;line-height:1.2;color:var(--ink)}.ds-input{width:100%;font:16px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--blue);transition:border-color .15s}.ds-input::placeholder{color:var(--soft)}.ds-input:hover,.ds-input:focus{outline:none;border-color:var(--blue)}"
+    },
+    {
+      "name": "Job Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Single-select pill; selected fills Navy Ink.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" type=\"button\">Roof</button><button class=\"ds-chip ds-chip-on\" type=\"button\">Chimney</button></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chip{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--field);border:2px solid transparent;font:16px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chip:hover{border-color:var(--blue)}.ds-chip:focus-visible{outline:3px solid var(--blue);outline-offset:2px}.ds-chip-on{background:var(--ink);color:#fff}"
+    },
+    {
+      "name": "Form Card",
+      "kind": "card",
+      "refersTo": "card-form",
+      "description": "White 24px-cornered card on paper holding the quote form.",
+      "html": "<div style=\"background:#f4f6fb;padding:24px\"><div class=\"ds-card\"><p>Opens Messenger with your message.</p></div></div>",
+      "css": ".ds-card{background:var(--card);border-radius:24px;padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px;color:var(--soft);font:16px/1.7 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.ds-card p{margin:0}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Blue line icon, Cal Sans title with signs, arrow disc that alone reacts.",
+      "html": "<a class=\"ds-row\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 40 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21L20 7l17 14\"/><path d=\"M8 17v16h24V17\"/><path d=\"M14 23h12M12 28h16\"/></svg><span><b>Roof</b><span class=\"ds-signs\">Missing shingles · leaks · moss</span></span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a>",
+      "css": ".ds-row{display:grid;grid-template-columns:40px 1fr 44px;gap:16px;align-items:center;padding:20px 0;text-decoration:none;color:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.ds-row:focus-visible{outline:none}.ds-ico{width:40px;height:40px;color:var(--blue);align-self:start;margin-top:2px}.ds-row b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(21px,5.6vw,25px);line-height:1.15}.ds-signs{display:block;margin-top:6px;font:16px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--soft)}.ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(11,35,64,.07);color:var(--ink);transition:background-color .2s}.ds-row:hover .ds-arrow{background:var(--yellow)}.ds-row:focus-visible .ds-arrow{background:var(--yellow);outline:3px solid var(--blue);outline-offset:3px}"
+    },
+    {
+      "name": "Numbered Step",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Yellow numeral disc beside title and one line, on deep textured navy.",
+      "html": "<div class=\"ds-band-deep\"><div class=\"ds-step\"><span class=\"ds-num\">1</span><div><b>Message us.</b><span>Tell us what you're seeing. A photo helps.</span></div></div></div>",
+      "css": ".ds-band-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:32px;font:16px/1.7 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.ds-step{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start}.ds-num{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);font-family:var(--display);font-weight:400;font-size:20px;line-height:1}.ds-step b{display:block;font-family:var(--display);font-weight:400;font-size:21px;line-height:1.2;color:var(--on-dark);margin-top:4px}.ds-step span:not(.ds-num){display:block;margin-top:4px}"
+    },
+    {
+      "name": "Floating Message Circle",
+      "kind": "custom",
+      "refersTo": "float-message",
+      "description": "Single 60px yellow Messenger circle; appears after the hero, hides at the form.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Message us on Messenger\"><svg viewBox=\"0 0 24 24\" width=\"28\" height=\"28\"><path d=\"M12 2.8c-5.2 0-9.2 3.8-9.2 8.7 0 2.7 1.2 5 3.2 6.6v3.3l3.1-1.7c.9.3 1.9.4 2.9.4 5.2 0 9.2-3.8 9.2-8.6S17.2 2.8 12 2.8z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M7 13.6l3.3-3.5 2.5 2.4 4.2-3.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);box-shadow:0 10px 28px rgba(6,27,49,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-float:focus-visible{outline:3px solid var(--blue);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ad's Navy Band, Made Into a Page",
+    "overview": "The site is DC Exterior's own Facebook ad stretched to a full page: the ad's navy band becomes the hero and the closing bands, its headline yellow becomes the one warm fill, and the logo's bright blue carries icons and focus. Between the navy bands sit calm off-white paper bands, where the work content lives. The result reads as a sturdy local trade: plain, confident, nothing decorative that the business itself does not own.\n\nDensity is low and phone-first. Every band is one idea (who and the offer, what we fix, how a quote works, the quote form, the closing line), stacked as full-width bands with generous vertical padding. Depth comes from band colour alternation and a faint diagonal line texture on the navy grounds, not from shadows. Type is Cal Sans for every heading, label and button, over a system sans body at 16/1.7.\n\nThere is no photography: no real job photos exist, and the ad's house is an illustration, so the hero is a plain textured navy field with the real logo. Contact is Messenger only; no phone or email affordance is ever drawn.",
+    "keyCharacteristics": [
+      "Alternating full-width bands: navy hero, paper, deep navy, paper, navy, deep footer.",
+      "One warm fill (the ad's yellow) for the primary action, step numbers and the floating message circle.",
+      "Logo blue for line icons and focus on light grounds; yellow takes over focus on dark grounds.",
+      "Cal Sans at weight 400 for every display role; system sans for reading.",
+      "Pill buttons and chips, a 24px-cornered white form card, flat surfaces.",
+      "Motion limited to a hero letter bounce-in and a 12px fade-up for content below the first screen."
+    ],
+    "rules": [
+      {
+        "name": "The One Warm Fill Rule",
+        "body": "Yellow is the only warm colour on the page and on light grounds it appears only as a fill with Navy Ink text on it. Its one text use is the accent clause of a heading on a navy ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Blue Is a Signal Rule",
+        "body": "Logo Blue marks what you can act on or where focus is (icons, focus rings, hover borders). It never fills a button or a band.",
+        "section": "colors"
+      },
+      {
+        "name": "The Focus Swaps With the Ground Rule",
+        "body": "Focus outlines are 3px Logo Blue on paper and white, 3px yellow on navy and deep navy.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Weight Rule",
+        "body": "Cal Sans is always weight 400. Hierarchy comes from size, never from bolding the display face; the body face goes to 600 only for a short bold lead-in (\"DC Exterior.\").",
+        "section": "typography"
+      },
+      {
+        "name": "The Second Clause Rule",
+        "body": "A heading on a navy ground may set its closing clause in yellow; headings on paper stay all Navy Ink.",
+        "section": "typography"
+      },
+      {
+        "name": "The Texture Only on Navy Rule",
+        "body": "The line texture appears on the hero and deep-navy bands; paper bands and cards stay untextured.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Rows Don't Lift Rule",
+        "body": "Interactive rows and link cards never gain a shadow or background on hover; only their arrow disc reacts.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do alternate bands of paper and navy/deep navy, with the line texture on navy grounds only.",
+      "Do keep yellow a fill with Navy Ink text on light grounds; let it colour only the closing clause of a heading on navy.",
+      "Do use Logo Blue for icons and focus on light grounds and switch focus to yellow on navy.",
+      "Do set every heading, label and button in Cal Sans at weight 400.",
+      "Do make every press target a pill or circle at least 44px (buttons 56px, chips 48px).",
+      "Do gate hover styles behind `(hover:hover)` so taps don't leave them stuck.",
+      "Do route every contact action to Messenger."
+    ],
+    "donts": [
+      "Don't put yellow text on paper or white; use `yellow-ink` if it is ever unavoidable.",
+      "Don't fill buttons or bands with Logo Blue, and don't set the logo on a black ground.",
+      "Don't add shadows to cards, rows or buttons; the floating circle is the only lifted element.",
+      "Don't draw phone, email or address affordances; the business publishes none.",
+      "Don't stand in for missing job photos with stock or illustration.",
+      "Don't replace the floating circle with a sticky bottom bar.",
+      "Don't animate anything visible at load other than the hero H1."
+    ]
+  }
+}

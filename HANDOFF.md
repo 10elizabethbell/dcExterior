@@ -9,13 +9,16 @@
 - Hero: plain textured navy (no real job photos exist). Eyebrow "Free quotes", H1 "Keep the rain out of your home." with the letter bounce-in, one promise line, "Get a free quote" (yellow) + "What we fix" (outlined).
 - Services: Roof, Chimney, Gutters, Pointing and brickwork, Exterior painting, each with the signs from their own ad ("Missing or damaged shingles · leaks…"). Tapping a row jumps to the form with that job pre-selected.
 - Contact is Facebook Messenger only (no phone or email exists): top-right "Message us", the floating circle (after the hero, hidden while the form is on screen), and the quote form, which writes the message, copies it to the clipboard, and opens `m.me/61558693145112?text=…`. If Messenger opens empty, the page shows the message with Copy and Open Messenger buttons.
-- Facebook: "See our work on Facebook" card in the close band, and in the footer.
+- Facebook: a navy "See our work on Facebook" card right under the services (the only evidence on hand), and in the footer.
+- Close band: "Protecting your property in every season." (their tagline) with the full logo.
+- Header sits transparently on the hero so the navy and its line texture run unbroken to the top.
 
 ## Assumptions I made
 - **"We" voice:** the ad says "Contact us"; no owner name, so it speaks as a crew.
 - **Painting** is listed because it's on their logo ("Painting · Gutters · Roof Repairs"); it isn't in the ad.
 - **"How a free quote works"** steps (message → we take a look → we fix it once you're happy) are inferred from "Free quotes"; the owner should confirm whether they quote from photos or visit first.
-- **Ad wording lightly edited for plain English:** "Water penetration/infiltration" → "water getting in", "Deteriorating brickwork" → "crumbling brick".
+- **Ad wording shortened** to 2–3 signs per service (finishing rule: short items), e.g. "Missing shingles · leaks · moss". Full ad list: Roof (missing/damaged shingles, leaks and water intrusion, algae and moss growth, weakened underlayment), Chimney (leaking mortar, cracked bricks, water penetration, damaged flashing), Gutters (clogs and debris, leaks and cracks, sagging or loose sections, overflowing water), Pointing (cracked or missing mortar, water infiltration, weak structural support, deteriorating brickwork).
+- Eyebrows "Roof to brickwork" and "Takes a minute" are my wording, not theirs.
 - **"Front roof to roots"** (caption) is not used: the image doesn't contain it, and it reads like a typo for "From roof to roots". Ask the owner.
 - **H1 has no place in it** (calm style wants one) because the brief forbids inferring a location. Once their area is known: e.g. "Keep the rain out in <Town>."
 - Town is a required form field so the owner knows where the job is.
@@ -38,9 +41,11 @@
 - **Runner-up worlds (opt-in signature motion):** (1) rain that runs down the hero and pours off a drawn roof edge into a gutter, which the visitor can clear by dragging (best fit); (2) repointing: drag across a brick wall to fill cracked mortar joints; (3) rain beading on glass that wipes clear under the finger; (4) a weather vane that swings with the pointer.
 - Before/after sliders once photos exist.
 - A "Signs to look for after a storm" seasonal checklist page (the ad is already this content).
+- Impeccable suggestions not taken: deleting the direction-contract comment (pipeline keeps it); "Find us on Facebook" instead of "See our work" (their timeline couldn't be read, so it's unverified that it shows work: check); self-hosting Cal Sans to drop the Google origins; a pulse on the chip a service row pre-selects; hiding the header mark on desktop where the big logo also shows.
 - Impeccable conflicts kept on purpose (Ellie's calm-style choices): eyebrow pills, the H1 letter bounce-in, the floating circle, Cal Sans, the diagonal band texture.
 
 ## Not verified
+- Detector: `repeating-stripes-gradient` and a false-positive hero `cramped-padding` are suppressed for index.html in `.impeccable/config.json`.
 - Messenger's `?text=` prefill on real iPhone/Android, and inside Facebook's in-app browser (the page also copies the message, and shows it with Copy/Open buttons as a fallback).
 - Clipboard copy inside the Facebook in-app browser.
 - Real-device touch and frame rate on old phones (checked in Playwright Chromium and WebKit at 360/390/430/1440).
